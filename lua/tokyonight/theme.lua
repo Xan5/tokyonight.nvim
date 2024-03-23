@@ -132,13 +132,13 @@ function M.setup()
     Special = { fg = c.blue1 }, -- (preferred) any special symbol
     -- SpecialChar   = { }, --  special character in a constant
     -- Tag           = { }, --    you can use CTRL-] on this
-    Delimiter = { link = "Special" }, --  character that needs attention
+    -- Delimiter     = { }, --  character that needs attention
     -- SpecialComment= { }, -- special things inside a comment
     Debug = { fg = c.orange }, --    debugging statements
 
     Underlined = { underline = true }, -- (preferred) text that stands out, HTML links
-    Bold = { bold = true, fg = c.fg }, -- (preferred) any bold text
-    Italic = { italic = true, fg = c.fg }, -- (preferred) any italic text
+    Bold = { bold = true },
+    Italic = { italic = true },
 
     -- ("Ignore", below, may be invisible...)
     -- Ignore = { }, -- (preferred) left blank, hidden  |hl-Ignore|
@@ -273,7 +273,6 @@ function M.setup()
     --- Punctuation
     ["@punctuation.delimiter"] = { fg = c.blue5 }, -- For delimiters ie: `.`
     ["@punctuation.bracket"] = { fg = c.fg_dark }, -- For brackets and parens.
-    ["@punctuation.special"] = { fg = c.blue5 }, -- For special symbols (e.g. `{}` in string interpolation)
     ["@markup.list"] = { fg = c.blue5 }, -- For special punctutation that does not fall in the catagories before.
     ["@markup.list.markdown"] = { fg = c.orange, bold = true },
 
@@ -775,9 +774,9 @@ function M.setup()
 
     NoiceCompletionItemKindDefault = { fg = c.fg_dark, bg = c.none },
 
-    TreesitterContext = { bg = util.darken(c.fg_gutter, 0.8) },
+    -- TreesitterContext = { bg = util.darken(c.fg_gutter, 0.8) },
     Hlargs = { fg = c.yellow },
-    -- TreesitterContext = { bg = util.darken(c.bg_visual, 0.4) },
+    TreesitterContext = { bg = util.darken(c.bg_visual, 0.6) },
   }
 
   -- lsp symbol kind and completion kind highlights
