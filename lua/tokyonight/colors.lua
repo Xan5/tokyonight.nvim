@@ -44,7 +44,7 @@ M.default = {
 
 M.night = {
   bg = "#000000",
-  bg_dark = "#000000",
+  bg_dark = "#051520",
 }
 M.day = M.night
 
